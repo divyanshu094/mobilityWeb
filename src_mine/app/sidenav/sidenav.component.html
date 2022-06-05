@@ -1,0 +1,38 @@
+<mat-toolbar class="toolbar" >
+  <mat-toolbar-row *ngIf="!small">
+    <img src="../../assets/imgs/mobility_logo.png" routerLink="/" class="logo" />
+
+    <div class="button-row sideMenuBtn" *ngIf="!small">
+      <button mat-button routerLinkActive="active-link" routerLink="/voyager">Voyager</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/practices">Practices</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/blog-list">Blogs</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/our-team">Our team</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/privacy-policy">Privacy policy</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/data-security">Data Security</button>
+      <button mat-button routerLinkActive="active-link" >Case studies</button>
+    </div>
+  </mat-toolbar-row>
+
+
+  <mat-toolbar-row *ngIf="small">
+    <img src="../../assets/imgs/mobility_logo.png" routerLink="/" class="logoMob" />
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+      (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #drawer mode="side" opened="false" role="dialog" fixedInViewport="true">
+    <div class="button-row sideMenuBtn">
+      <button mat-button routerLinkActive="active-link" routerLink="/voyager">Voyager</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/practices">Practices</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/blog-list">Blogs</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/our-team">Our team</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/privacy-policy">Privacy policy</button>
+      <button mat-button routerLinkActive="active-link" routerLink="/data-security">Data Security</button>
+      <button mat-button routerLinkActive="active-link" >Case studies</button>
+    </div>
+  </mat-sidenav>
+</mat-sidenav-container>

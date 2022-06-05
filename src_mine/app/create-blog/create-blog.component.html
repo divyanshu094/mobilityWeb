@@ -1,0 +1,17 @@
+<div class="content">
+    <p class="head"><b>Give your Passion</b> a Platform Today!</p>
+    <p class="image">Add an image</p>
+    <p class="sub-image">This email will show on your blag page</p>
+    <button class="file">Choose file <br> Or <br> Drag image</button>
+    <label class="write">Write Your Blog</label>
+    <div class="NgxEditor__Wrapper">
+      <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"> </ngx-editor-menu>
+      <ngx-editor
+        [editor]="editor"
+        [(ngModel)]="html"
+        [placeholder]="'Type here...'"
+      ></ngx-editor>
+    </div>
+    <button class="publish" (click)="publishBlog()">Publish</button>
+    <!-- routerLink="/admin-blog-list" -->
+</div>

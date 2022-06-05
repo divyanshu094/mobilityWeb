@@ -1,0 +1,118 @@
+.head-div {
+  background: transparent url('../../assets/imgs/Mask Group 7.png') 0% 0% no-repeat padding-box;
+  background-position: right;
+  width: 100%;
+  opacity: 1;
+}
+
+.privacy-heading {
+  letter-spacing: 0px;
+  color: #1D1B1B;
+  opacity: 1;
+  font-weight: 300;
+  font-size: 2em;
+  margin-left: 4%;
+  margin-top: 3%;
+}
+
+.date {
+  letter-spacing: 0px;
+  color: #2e2828;
+  opacity: 1;
+  font-size: 1.3em;
+  font-family: poppins;
+  font-weight: normal;
+  margin: 2% 4%;
+}
+
+.heading {
+  margin-left: 4%;
+  letter-spacing: 0px;
+  color: #1D1B1B;
+  opacity: 1;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 1.5%;
+}
+
+.sub-text {
+  margin-left: 4%;
+  letter-spacing: 0px;
+  color: #2E2828;
+  opacity: 1;
+  font-family: poppins;
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 4%;
+  width: 85%;
+}
+
+.no-margin {
+  margin-bottom: 0% !important;
+}
+
+.stepSection {
+  margin-left: 4%;
+  font-family: Poppins;
+  letter-spacing: 0px;
+  color: #2e2828;
+  opacity: 1;
+  display: table;
+  width: 85%;
+  cursor: pointer;
+  margin-bottom: 2%;
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+.stepSection span {
+  display: table-cell;
+}
+
+.stepSection span:nth-of-type(1) {
+  width: 2%;
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+
+  .head-div {
+    margin-top: 18% !important;
+  }
+
+  .small {
+    height: 100px !important;
+  }
+
+  .privacy-heading {
+    margin: 5% 0% 5% 4%;
+    line-height: 1.2;
+  }
+
+  .date {
+    margin: 1% 0% 5% 4%;
+  }
+
+  .heading {
+    margin: 8% auto 5% 4% !important;
+    line-height: 1.2;
+  }
+
+  .sub-text {
+    width: 95% !important;
+    margin-left: 4% !important;
+  }
+
+  .stepSection {
+    width: 95% !important;
+    margin-left: 4% !important;
+  }
+
+  .stepSection span:nth-of-type(1) {
+    width: 8%;
+  }
+}

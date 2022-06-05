@@ -1,0 +1,54 @@
+<div class="content" role="main">
+  <div>
+    <mat-tab-group dynamicHeight class="tab-div" animationDuration="2000ms" (selectedIndexChange)="getTabIndex($event)">
+      <mat-tab label="Stories">
+        <div class="main-text">
+          <p class="txt">Check Out Our <b>Latest Blogs</b></p>
+        </div>
+        <mat-grid-list [cols]="noOfCol" rowHeight="{{rowHeight}}" (window:resize)="onResize($event)">
+          <mat-grid-tile>
+            <img src="../../assets/imgs/pexels-ivan-samkov-4240507.png" class="blog-image" />
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <ul>
+            <p class="blog-summary-title"><b class="heading">Mobility Insights_Sale of PwC’s Global Mobility Practice</b></p>
+                <p class="blog-summary">The news of PwC looking to sell its Global Mobility practice actually broke in July of
+              this year. That had indeed taken us by surprise though PwC had refused to confirm
+              or deny the news. What has most surprised us now is how fast a buyer was found
+              and the deal concluded, more so in the current pandemic scenario when business
+              travel and face-to-</p>
+            </ul>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <h2 class="oth-blog"><b>Must read</b> blogs</h2>
+
+
+        <mat-grid-list class="card-container blogContainer" [cols]="noOfColBlog" rows="3" rowHeight="{{rowHeightBlog}}" (window:resize)="onResize($event)">
+          <mat-grid-tile class="blog-tile" *ngFor="let blog of blogs"  routerLink="/blog">
+            <ul>
+              <img class="card" [src]="blog.src" />
+              <h4 class="head" [innerText]="">{{blog.heading}}</h4>
+              <p class="sub-text">{{blog.subText}}</p>
+              <div class="read">
+                <span> Read More</span>
+                <span> <img src="../../assets/imgs/1814085_arrow_forward_next_right_icon.png" /></span>
+              </div>
+            </ul>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+
+      <mat-tab label="Confession of Mob Boss"> Content 2 </mat-tab>
+      <mat-tab label="Other Stories"> Content 3 </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div class="up-footer">
+    <h3 class="up-footer-text"><b>Start using</b> Mobility SQR now!!</h3>
+    <p class="logo-text">We work side-by-side with our partners at every stage of
+      growth to venture. We work side-by-side with our
+      partners<br>
+      at every stage of growth to venture.</p>
+    <button class="button">Contact us</button>
+  </div>
+
+</div>

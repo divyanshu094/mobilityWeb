@@ -1,0 +1,168 @@
+<div class="content" role="main">
+  <div class="back-image">
+    <mat-grid-list [cols]="noOfCol" rowHeight="{{rowHeight}}" (window:resize)="onResize($event)">
+      <mat-grid-tile class="head-mat">
+        <div class="low-div">
+          <p class="txt">Web design agency</p>
+          <h2 class="talent">Talent Mobility SaaS for</h2>
+          <h2 class="sub-text">Cost Optimization</h2>
+          <p class="descp">We work side-by-side with our partners at every stage of growth to venture into</p>
+          <button class="btn-start">Let's get started</button>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile class="bgimage" *ngIf="!small"><img src="../../assets/imgs/Group 623.png" class="phn-logo" /></mat-grid-tile>
+    </mat-grid-list>
+
+
+
+    <h2 class="mid-text">The only <b>mobility SaaS</b> that addresses</h2>
+
+    <div class="card-container">
+      <a class="card" target="_blank" rel="noopener">
+        <span class="bg-image"><img src="../../assets/imgs/3668834_suitcase_travel_vacation_icon.png" /></span>
+        <p class="card-text">Bussiness Travel</p>
+        <p class="card-sub-text">We work side-by-side with<br>our partners at every stage<br>of growth to venture.</p>
+      </a>
+
+      <a class="card" target="_blank" rel="noopener">
+        <img src="../../assets/imgs/2205218_folder_document_file_organize_icon.png" />
+        <p class="card-text">Long term assignments</p>
+        <p class="card-sub-text">We work side-by-side with<br>our partners at every stage<br>of growth to venture.</p>
+      </a>
+
+      <a class="card" target="_blank" rel="noopener">
+        <img src="../../assets/imgs/Layer 2.png" />
+        <p class="card-text">Secondary assignment</p>
+        <p class="card-sub-text">We work side-by-side with<br>our partners at every stage<br>of growth to venture.</p>
+      </a>
+
+      <a class="card" target="_blank" rel="noopener">
+        <img src="../../assets/imgs/file_x5F_folder.png" />
+        <p class="card-text">Commuter assignment</p>
+        <p class="card-sub-text">We work side-by-side with<br>our partners at every stage<br>of growth to venture.</p>
+      </a>
+
+    </div>
+  </div>
+  <mat-grid-list [cols]="noOfCol" class="description" rowHeight="40em" *ngIf="!small">
+    <mat-grid-tile>
+      <ul>
+        <h3 class="txt-bold">Native ioS & Android <b>mobile
+            app</b></h3>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Initiate the request or approve on the move</span>
+        </div>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Track your calendar manually or via GPS</span>
+        </div>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Carry all your important documents in vault</span>
+        </div>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Emergency /distress service at your command</span>
+        </div>
+      </ul>
+    </mat-grid-tile>
+
+    <mat-grid-tile><img src="../../assets/imgs/Group 545.png" class="phn-logo2" /></mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list [cols]="noOfCol" class="description" rowHeight="26em" *ngIf="small">
+    <mat-grid-tile><img src="../../assets/imgs/Group 545.png" class="phn-logo2" /></mat-grid-tile> 
+    <mat-grid-tile>
+      <ul>
+        <h3 class="txt-bold">Native ioS & Android <b>mobile
+            app</b></h3>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Initiate the request or approve on the move</span>
+        </div>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Track your calendar manually or via GPS</span>
+        </div>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Carry all your important documents in vault</span>
+        </div>
+
+        <div class="stepSection">
+          <span> <img src="../../assets/imgs/Group 417.png" /></span>
+          <span> Emergency /distress service at your command</span>
+        </div>
+      </ul>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+  <div [class.back-image]="!small" [class.features]="!small">
+    <mat-grid-list [cols]="noOfCol" rowHeight="{{rowHeightSeamless}}" (window:resize)="onResize($event)">
+      <mat-grid-tile>
+        <ul>
+          <p class="seamless">
+            <b>Seamlessly integrate</b>
+            with internalsystems and all your
+            external vendors
+          </p>
+          <p class="seamless-text">We work side-by-side with our partners at every stage of growth to venture. We work
+            side-by-side with our partners at every stage of growth to venture.</p>
+        </ul>
+
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="card-container box4">
+          <a class="group634" rel="noopener">
+          </a>
+          <a class="group635" rel="noopener">
+          </a>
+          <a class="group636" rel="noopener">
+          </a>
+          <a class="group637" rel="noopener">
+          </a>
+        </div>
+
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div class="blogs">
+    <mat-grid-list class="blogContainer" [cols]="blogCols" rowHeight="{{rowHeightBlog}}">
+      <h3 class="mid-text">Check Out Our <b>Latest
+          Blogs</b></h3>
+      <mat-grid-tile *ngFor="let blog of blogs" routerLink="/blog" class="mob-blog">
+        <ul class="blogUl">
+          <img class="cardBlog" [src]="blog.src" />
+          <h4 class="head" [innerText]="">{{blog.heading}}</h4>
+          <p class="blog-sub-text">{{blog.subText}}</p>
+          <div class="read">
+            <span> Read More</span>
+            <span> <img src="../../assets/imgs/1814085_arrow_forward_next_right_icon.png" /></span>
+          </div>
+        </ul>
+        
+      </mat-grid-tile>
+      
+    </mat-grid-list>
+  </div>
+    <button class="more-blogs">More Blogs</button>
+  
+  
+  <div class="up-footer">
+    <h3 class="up-footer-text"><b>Start using</b> Mobility SQR now!!</h3>
+    <p class="logo-text">We work side-by-side with our partners at every stage of
+      growth to venture. We work side-by-side with our
+      partners 
+      at every stage of growth to venture.</p>
+    <button class="button">Contact us</button>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="content" role="main">
+  <div>
+    <mat-tab-group class="tab-div" (selectedIndexChange)="getTabIndex($event)">
+      <mat-tab label="Stories">
+  
+  <div>
+    <img style="width:100%;" src="../../assets/imgs/blog_main.png" />
+  </div>
+  <div>
+    <h2 class="blog-title">Mobility Insights_Sale of PwC’s Global Mobility Practice</h2>
+    <p class="blog-content">{{blogContent}}</p>
+  </div>
+  <hr style="width: 90%;">
+  <h2 class="oth-blog"><b>Similar</b> blogs</h2>
+
+  <mat-grid-list class="card-container" [cols]="cols" rowHeight="30em">
+    <mat-grid-tile *ngFor="let blog of blogs">
+      <ul>
+        <img class="card" [src]="blog.src" />
+        <h4 class="head" [innerText]="">{{blog.heading}}</h4>
+        <p class="sub-text">{{blog.subText}}</p>
+        <div class="read">
+          <span> Read More</span>
+          <span> <img src="../../assets/imgs/1814085_arrow_forward_next_right_icon.png" /></span>
+        </div>
+      </ul>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</mat-tab>
+<mat-tab label="Confession of Mob Boss"> Content 2 </mat-tab>
+<mat-tab label="Other Stories"> Content 3 </mat-tab>
+</mat-tab-group>
+</div>
+
+</div>
+

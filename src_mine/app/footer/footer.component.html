@@ -1,0 +1,56 @@
+<div class="footerdiv">
+  <mat-grid-list class="mainList" [cols]="noOfCol" (window:resize)="onResize($event)">
+  <mat-grid-tile [colspan]="colspan4" [class.firsttile]="!small" (window:resize)="onResize($event)">
+    <ul class="footer">
+      <img class="img-logo" src="../../assets/imgs/mobility_logo.png">
+      <p class="img-text">We work side-by-side with our partners at every stage of growth to venture into We work side-by-side with our
+        partners at every stage of growth to venture into</p>
+    </ul>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="colspan2">
+    <ul class="footer">
+      <p class="head">About Us</p>
+      <button mat-button class="sub-text" routerLinkActive="active-link" routerLink="/voyager">Voyager</button>
+      <button mat-button class="sub-text" routerLinkActive="active-link" routerLink="/practices">Practices</button>
+      <button mat-button class="sub-text" routerLinkActive="active-link" routerLink="/blog-list">Blogs</button>
+    </ul>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="colspan2">
+    <ul class="footer">
+      <p class="head">Features</p>
+      <button mat-button class="sub-text" routerLinkActive="active-link" routerLink="/our-team">Our team</button>
+      <button mat-button class="sub-text" routerLinkActive="active-link" routerLink="/privacy-policy">Privacy policy</button>
+      <p class="sub-text">Terms and conditions</p>
+    </ul>
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="colspan3">
+    <ul class="footer">
+      <p class="head">Blog</p>
+      <button mat-button class="sub-text" routerLinkActive="active-link">Case studies</button>
+      <p class="sub-text">Stories</p>
+      <p class="sub-text">Confession of mob Boss</p>
+    </ul>
+  </mat-grid-tile>
+</mat-grid-list>
+<hr *ngIf="!small">
+<mat-grid-list cols="12" rowHeight="4em" *ngIf="!small">
+  <mat-grid-tile colspan="5"></mat-grid-tile>
+  <mat-grid-tile colspan="2"><p class="copyright">Copyright@2021</p></mat-grid-tile>
+  <mat-grid-tile colspan="2"></mat-grid-tile>
+  <mat-grid-tile colspan="3"><p  class="follow">Follow us</p><img class="facebook" src="../../assets/imgs/Icon - Facebook.png">
+    <img class="insta" src="../../assets/imgs/Icon - Instagram.png">
+    <img class="twitter" src="../../assets/imgs/Group 617.png"><img class="youtube" src="../../assets/imgs/Group 618.png"></mat-grid-tile>
+
+</mat-grid-list>
+<!-- <mat-grid-list cols="1" rowHeight="4em" *ngIf="small" class="last-list">
+  <hr>
+  <mat-grid-tile><p  class="follow">Follow us</p><img class="facebook" src="../../assets/imgs/Icon - Facebook.png">
+    <img class="insta" src="../../assets/imgs/Icon - Instagram.png">
+    <img class="twitter" src="../../assets/imgs/Group 617.png"><img class="youtube" src="../../assets/imgs/Group 618.png"></mat-grid-tile>
+    <mat-grid-tile><p class="copyright">Copyright@2021</p></mat-grid-tile>
+</mat-grid-list> -->
+</div>
+

@@ -1,0 +1,167 @@
+.head {
+  width: 100%;
+  margin: 2% auto 0%;
+  background: transparent url('../../assets/imgs/Mask Group 14.png') no-repeat padding-box;
+  background-size: 100% auto;
+  background-position: right;
+  height: 20%;
+}
+
+.features {
+  background-image: url("../../assets/imgs/Repeat Grid 20.png");
+  background-repeat: no-repeat;
+  background-position: 99% 2%;
+}
+
+.features-head {
+  font-family: poppins;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #1D1B1B;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+
+.sub-features-head {
+  margin-left: 4%;
+  letter-spacing: 0.3px;
+  color: #625c5c;
+  line-height: 1.5;
+  opacity: 1;
+  font-family: poppins;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.stepSection {
+  margin-left: 4%;
+  font-family: Poppins;
+  letter-spacing: 0px;
+  color: #2e2828;
+  opacity: 1;
+  display: table;
+  width: 85%;
+  cursor: pointer;
+  margin-bottom: 2%;
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+.stepSection span {
+  display: table-cell;
+}
+
+.stepSection span:nth-of-type(1){
+  width: 5%;
+}
+
+.assignment {
+  background: transparent linear-gradient(282deg, #FFF4E9 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.tool {
+  width: 40%;
+  margin: 4% 4% 2%;
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: 0px;
+  color: #1D1B1B;
+  text-transform: capitalize;
+}
+
+.tool span {
+  color: #8630AC;
+  font-weight: 800;
+}
+
+.sub-tool {
+  width: 40%;
+  margin: 1% 10% 3% 4%;
+  font-family: poppins;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #2e2828;
+  opacity: 1;
+  line-height: 1.6;
+}
+
+.sub-features {
+  width: 55%;
+  margin-left: 4%;
+  letter-spacing: 0px;
+  color: #2E2828;
+  opacity: 1;
+  font-family: poppins;
+  font-size: 1em;
+  font-weight: 450;
+ }
+
+
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+  ul{
+    padding-inline-start: unset;
+  }
+  .head{
+    background-size: auto !important;
+    height: 300px !important;
+    background-position: 100% 225% !important;
+  }
+  .tool{
+    width: 100% !important;
+    margin: 25% 4% 5% !important;
+  }
+  .sub-tool{
+    width: 90% !important;
+  }
+  .image{
+    width: 75% !important;
+  }
+  .mob-process{
+    margin-top: 0% !important;
+  }
+ 
+  .features-head{
+    font-size: 1.5em !important;
+    margin-left: 5% !important;
+  }
+  .sub-features-head{
+    margin-left: 5% !important;
+  }
+  .stepSection{
+    margin-left: 5% !important;
+    width: 90% !important;
+  }
+  .sub-features{
+    margin-left: 5% !important;
+    width: 90% !important;
+  }
+  // .up-footer{
+  //   height: 300px !important;
+  //   border-radius: 0px !important;
+  // }
+  .up-footer-text{
+    font-size: 1.6em !important;
+    margin-top: 10% !important;
+  }
+  .logo-text{
+    font-size: 1.2em !important;
+    width: 80% !important;
+  }
+  .button{
+    width: 50% !important;
+    padding: 3% 5% !important;
+    font-size: 1em !important;
+    margin: 10% auto !important;
+  }
+}
